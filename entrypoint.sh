@@ -13,6 +13,7 @@ echo "INPUT_KEY: ${INPUT_KEY}"
 echo "INPUT_RUN: ${INPUT_RUN}"
 
 CMD="${INPUT_RUN/$'\n'/' && '}"
+echo "CMD: ${CMD}"
 
 if [ -z "$INPUT_KEY" ] # Password
 then
