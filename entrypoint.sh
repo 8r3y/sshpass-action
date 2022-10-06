@@ -18,7 +18,7 @@ if [ -z "$INPUT_KEY" ] # Password
 then
     echo "Using password"
     export SSHPASS=$PASS
-    sshpass -e ssh -o StrictHostKeyChecking=no -p $INPUT_PORT $INPUT_USER@$INPUT_HOST "$CMD"
+    sshpass -p $PASS $CMD
 
 else # Private key
     echo "Using private key"
